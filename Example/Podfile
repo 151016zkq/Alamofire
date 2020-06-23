@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Alamofire_Example' do
+  pod 'Alamofire', :path => '../'
+
+  target 'Alamofire_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
